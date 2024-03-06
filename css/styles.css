@@ -9,51 +9,106 @@
 }
 
 body{
+    background: #FFFFFF;
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . ."
+    "titulo titulo img img"
+    "parrafo parrafo img img"
+    "item5 item6 img img"
+    "item7 item7 img img"
     ;
 }
 
 .item1{
     grid-area: titulo;
     margin-left: 10vh;
-
+}
+.item1 h1{
+    margin-top: 15vh;
+    font-size: xxx-large;
+    font-weight: bolder;
 }
 
 .item2{
     grid-area: img;
-    margin-left: 10vh;
+    margin-left: 5vh;
+}
+.item2 img{
+    margin-top: 20vh;
+    display: flex;
+    width: 100%;
+    height: 80vh;
 }
 
 .item3{
     grid-area: parrafo;
     margin-left: 10vh;
 }
-
-.item4{
-    grid-area: boton;
-    margin-left: 10vh;
+.item3 p{
+    font-size: x-large;
+    margin-top: 1vh;
 }
+.item3 button{
+    margin-top:3vh;
+    font-size: larger;
+    color: white;
+    background: var(--color-button);
+    border: none;
+    border-radius: 100px;
+    padding: 20px;
+    width: 24vh;
+}
+
 
 .item5{
     grid-area: item5;
     margin-left: 10vh;
+    background: var(--color-card1);
+    border-radius: 3vh;
+}
+.card1 p{
+    text-align: center;
+}
+.card1 h3{
+    text-align: left;
+    margin: 2vh;
 }
 
 .item6{
     grid-area: item6;
-    margin-left: 10vh;
+    margin-left: 3vh;
+    background: var(--color-card2);
+    border-radius: 3vh;
 }
+.card2 p{
+    text-align: center;
+    margin: 2vh;
+}
+.card2 h3{
+    text-align: left;
+    margin: 2vh;
+}
+
 
 .item7{
     grid-area: item7;
     margin-left: 10vh;
+    background: var(--color-card3);
+    border-radius: 3vh;
+    margin-top: 3vh;
 }
+
+
+.item5 h3, .item6 h3, .item7 h3{
+    font-size: xx-large;
+    margin-bottom: 1vh;
+}
+
+.item5 h3, .item6 h3{
+    margin-top: 5vh;
+}
+
