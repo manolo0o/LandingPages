@@ -8,51 +8,46 @@
     font-family:"Lato", sans-serif;
 }
 
-body{
+
+.section1{
+    width: 1440px;
+    height: 1024px;
     background: #FFFFFF;
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
     "titulo titulo img img"
-    "parrafo parrafo img img"
+    "titulo titulo img img"
+    "titulo titulo img img"
     "item5 item6 img img"
     "item7 item7 img img"
+    "item7 item7 img img"
+    
     ;
 }
 
-.item1{
+.item1 {
+    margin-top: 7vh;
     grid-area: titulo;
-    margin-left: 10vh;
+    margin-left: 20vh;
+    width: 601px;
+    height: 374px;
 }
-.item1 h1{
-    margin-top: 15vh;
-    font-size: xxx-large;
+.item1 h1 {
+    margin-left: 3vh;
+    font-size: 5.5vh;
     font-weight: bolder;
 }
-
-.item2{
-    grid-area: img;
-    margin-left: 5vh;
-}
-.item2 img{
-    margin-top: 20vh;
-    display: flex;
-    width: 100%;
-    height: 80vh;
-}
-
-.item3{
-    grid-area: parrafo;
-    margin-left: 10vh;
-}
-.item3 p{
-    font-size: x-large;
+.item1 p{
+    margin-left: 3vh;
+    font-size: large;
     margin-top: 1vh;
 }
-.item3 button{
+.item1 button{
+    margin-left: 3vh;
     margin-top:3vh;
     font-size: larger;
     color: white;
@@ -63,15 +58,28 @@ body{
     width: 24vh;
 }
 
+.item2{
+    grid-area: img;
+    margin-left: 0vh;
+}
+.item2 img {
+    margin-top: 13vh;
+    display: flex;
+    width: 725px;
+    height: 822px;
+}
 
 .item5{
     grid-area: item5;
-    margin-left: 10vh;
+    margin-left: 23vh;
     background: var(--color-card1);
     border-radius: 3vh;
+    height: 22vh;
+    width: 301px;
 }
 .card1 p{
     text-align: center;
+    margin: 2vh;
 }
 .card1 h3{
     text-align: left;
@@ -80,9 +88,11 @@ body{
 
 .item6{
     grid-area: item6;
-    margin-left: 3vh;
+    margin-left: 2vh;
     background: var(--color-card2);
     border-radius: 3vh;
+    height: 22vh;
+    width: 301px;
 }
 .card2 p{
     text-align: center;
@@ -95,20 +105,22 @@ body{
 
 
 .item7{
+    margin-top: 2vh;
     grid-area: item7;
-    margin-left: 10vh;
+    margin-left: 23vh;
     background: var(--color-card3);
     border-radius: 3vh;
-    margin-top: 3vh;
+    width: 601px;
+    height: 22vh;
 }
 
 
 .item5 h3, .item6 h3, .item7 h3{
     font-size: xx-large;
-    margin-bottom: 1vh;
 }
 
 .item5 h3, .item6 h3{
-    margin-top: 5vh;
+    margin-top: 2vh;
+
 }
 
