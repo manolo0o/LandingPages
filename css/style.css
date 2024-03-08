@@ -1,0 +1,83 @@
+@import url(variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Lato", sans-serif;
+}
+body{
+    width: 100% ;
+    height: 1475px;
+    background : #f2f2f2;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    ". . cont cont cont . ."
+    ". . cont cont cont . ."
+    ". list list list list list ."
+    ". list list list list list ."
+    ". list list list list list ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ; 
+}
+
+.item1{
+    margin-left: 5vh;
+    grid-area: cont;
+    text-align: center;
+    margin-top: 5vh;
+    width: 695px;
+    height: 297px;
+}
+.item1 h1{
+    margin-bottom: 2vh;
+    font-size: xxx-large;
+}
+.item1 p{
+    font-size: large;
+}
+.item1 button{
+    margin-top: 2vh ;
+    color: white;
+    background: #252525;
+    border: none;
+    border-radius: 100px;
+    padding: 16px;
+    width:15vh;
+}
+
+
+.item2container{
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+    grid-area: list;
+    background: white;
+    border: none;
+    border-radius: 30px;
+    width: 1048px;
+    height: 191px;
+}
+.item2container{
+    display: flex;
+    flex-direction: column;
+}
+.item2{
+    display: flex;
+}
+.imagen-container{
+    width: 1312px;
+    height: 526px;
+}
+.item2 h3{
+    margin-bottom: 3vh;
+    text-decoration-line: underline;
+}
+.title1, .title2, .title3, .title4{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8vh;
+}
