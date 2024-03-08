@@ -10,21 +10,19 @@
 
 
 .section1{
-    width: 1440px;
-    height: 1024px;
     background: #FFFFFF;
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-    "titulo titulo img img"
-    "titulo titulo img img"
-    "titulo titulo img img"
-    "item5 item6 img img"
-    "item7 item7 img img"
-    "item7 item7 img img"
+    ". titulo titulo img img img img "
+    ". titulo titulo img img img img "
+    ". titulo titulo img img img img "
+    ". item5 item6 img img img img "
+    ". item7 item7 img img img img "
+    ". item7 item7 img img img img "
     
     ;
 }
@@ -32,17 +30,17 @@
 .item1 {
     margin-top: 7vh;
     grid-area: titulo;
-    margin-left: 20vh;
+    margin-left: 0;
     width: 601px;
     height: 374px;
 }
 .item1 h1 {
-    margin-left: 3vh;
+    margin-left: 0vh;
     font-size: 5.5vh;
     font-weight: bolder;
 }
 .item1 p{
-    margin-left: 3vh;
+    margin-left: 0vh;
     font-size: large;
     margin-top: 1vh;
 }
@@ -60,7 +58,7 @@
 
 .item2{
     grid-area: img;
-    margin-left: 0vh;
+    margin-left: 5vh;
 }
 .item2 img {
     margin-top: 13vh;
@@ -71,11 +69,11 @@
 
 .item5{
     grid-area: item5;
-    margin-left: 23vh;
+    margin-left: 0vh;
     background: var(--color-card1);
     border-radius: 3vh;
     height: 22vh;
-    width: 301px;
+    width: 290px;
 }
 .card1 p{
     text-align: center;
@@ -88,11 +86,11 @@
 
 .item6{
     grid-area: item6;
-    margin-left: 2vh;
+    margin-left: 0.5vh;
     background: var(--color-card2);
     border-radius: 3vh;
     height: 22vh;
-    width: 301px;
+    width: 290px;
 }
 .card2 p{
     text-align: center;
@@ -107,20 +105,41 @@
 .item7{
     margin-top: 2vh;
     grid-area: item7;
-    margin-left: 23vh;
     background: var(--color-card3);
     border-radius: 3vh;
     width: 601px;
-    height: 22vh;
+    height: 20vh;
+}
+.card3 {
+    display: flex;
 }
 
+.content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.text {
+    text-align: left;
+}
+.text h3{
+    margin-bottom: 1vh;
+}
+
+.img1 {
+    margin-top: 3vh;
+    margin-left: 6vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; 
+}
 
 .item5 h3, .item6 h3, .item7 h3{
     font-size: xx-large;
-}
-
-.item5 h3, .item6 h3{
     margin-top: 2vh;
-
 }
+
+
 
