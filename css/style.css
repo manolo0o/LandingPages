@@ -95,6 +95,7 @@ body{
 }
 
 .galery{
+    margin-top: 3vh;
     grid-area: gal;
 }
 
